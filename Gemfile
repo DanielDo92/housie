@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.0'
 gem "devise"
+gem "sprockets-rails", require: "sprockets/railtie"
+gem "bootstrap", "~>4.1.3"
 gem "sqlite3"
 gem "mysql2", "~> 0.3.18"
 # Use SCSS for stylesheets

@@ -14,12 +14,14 @@
 ActiveRecord::Schema.define(version: 20181203152318) do
 
   create_table "rooms", force: :cascade do |t|
-    t.string   "name",                                               null: false
-    t.integer  "level",                                              null: false
-    t.decimal  "area",       precision: 10, scale: 2,                null: false
-    t.boolean  "suited",                              default: true, null: false
-    t.datetime "created_at",                                         null: false
-    t.datetime "updated_at",                                         null: false
+    t.string   "name",                                                  null: false
+    t.integer  "level",                                                 null: false
+    t.integer  "price",                               default: 1000000, null: false
+    t.integer  "occupants",                           default: 0,       null: false
+    t.decimal  "area",       precision: 10, scale: 2,                   null: false
+    t.boolean  "suited",                              default: true,    null: false
+    t.datetime "created_at",                                            null: false
+    t.datetime "updated_at",                                            null: false
   end
 
   create_table "users", force: :cascade do |t|

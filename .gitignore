@@ -15,5 +15,5 @@
 /log/*
 !/log/.keep
 /tmp
-/.idea/workspace.xml
-/.idea/housie.iml
+.idea/workspace.xml
+.idea/housie.iml
